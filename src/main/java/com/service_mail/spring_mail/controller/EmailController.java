@@ -18,8 +18,8 @@ public class EmailController {
     }
 
     @PostMapping
-    public String sendEmail(String to, String[] cc, String subjet, String body) {
-        String result = emailService.sendEmail(to, cc, subjet, body);
+    public String sendEmail(String to, String[] cc, String subjetc, String body) {
+        String result = emailService.sendEmail(to, cc, subjetc, body);
         log.info("Email sent successfully :: ", result);
         return result;
     }
